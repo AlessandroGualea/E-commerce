@@ -1,114 +1,104 @@
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
-* {
-  box-sizing: border-box;
-}
+* {box-sizing: border-box;}
 
-body {
-  background-color: #000000;
-  font-family: "Gill Sans", "Gill Sans MT", Poppins, "Trebuchet MS", sans-serif;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 100%;
-  background-image: url(https://www.leccenews24.it/wp-content/uploads/2018/10/18194141/campo-calcio.jpg);
-  background-size: 100%;
-}
+body {background-color: #000000;
+      font-family: 'Gill Sans', 'Gill Sans MT', Poppins,'Trebuchet MS', sans-serif;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 90%;        background-image:url(https://static.vecteezy.com/ti/vettori-gratis/p3/2312411-football-soccer-ball-pose-dark-flame-silhouette-gratuito-vettoriale.jpg);
+background-size: 100%;}
 
-.barraalto {
-  background-color: hsl(0, 0%, 0%);
-  float: center;
-  width: 100%;
-  position: fixed;
-  height: 120px;
-}
+.barraalto {background-color: hsl(0, 0%, 0%);
+            float: center;
+            width: 100%;
+            position: fixed;
+            height: 130px;}
 
-nav {
-  background-color: #00000;
-  padding: 1%;
-  width: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: width 0.6s linear;
-  overflow-x: hidden;
-  margin: 3%;
-  float: center;
-  position: fixed;
-  margin-top: 2.5%;
-}
+.barraalto bandiere{position: fixed;
+                    float: right;}
 
-nav.active {
-  width: 390px;
-  float: center;
-}
+nav {background-color: #000000;
+     padding: 18px;
+     width: 70px;
+     display: flex;
+     align-items: left;
+     justify-content: left;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+     transition: width 0.6s linear;
+     overflow-x: hidden;
+     margin: 1%;
+     float: left;
+     position: fixed;
+     margin-top: 2.5%;}
 
-nav ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  width: 0;
-  transition: width 0.6s linear;
-}
+nav.active {width: 340px;}
 
-nav.active ul {
-  width: 100%;
-}
+nav ul {display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 0;
+        transition: width 0.6s linear;}
 
-nav ul li {
-  transform: rotateY(0deg);
+nav.active ul {width: 90%;}
+
+nav ul li {transform: rotateY(0deg);
   opacity: 0;
   transition: transform 0.6s linear, opacity 0.6s linear;
-  font-size: 15px;
-}
+font-size: 15px;}
 
-nav.active ul li {
-  opacity: 1;
-  transform: rotateY(360deg);
-}
+nav.active ul li {opacity: 1;
+  transform: rotateY(360deg);}
 
-nav ul a {
-  position: relative;
+nav ul a {position: relative;
   color: #ffffff;
   text-decoration: none;
-  margin: 0 12px;
-}
+  margin: 0 12px;}
 
-.icon {
-  background-color: #000000;
+.icon {background-color: #000000;
   border: 0;
   cursor: pointer;
   padding: 0;
   position: relative;
   height: 30px;
-  width: 30px;
-}
+  width: 30px;}
 
-.icon:focus {
-  outline: 0;
-}
+.icon:focus {outline: 0;}
 
-.icon .line {
-  background-color: #ffffff;
+.icon .line {background-color: #ffffff;
   height: 2px;
   width: 20px;
   position: absolute;
   top: 10px;
   left: 5px;
-  transition: transform 0.6s linear;
-}
+  transition: transform 0.6s linear;}
 
-.icon .line2 {
-  top: auto;
-  bottom: 10px;
-}
+.icon .line2 {top: auto;
+  bottom: 10px;}
 
-nav.active .icon .line1 {
-  transform: rotate(-765deg) translateY(5.5px);
-}
+nav.active .icon .line1 {transform: rotate(-765deg) translateY(5.5px);}
 
-nav.active .icon .line2 {
-  transform: rotate(765deg) translateY(-5.5px);
-}
+nav.active .icon .line2 {transform: rotate(765deg) translateY(-5.5px);}
+
+
+.logomio { max-width: fit-content;
+    margin: 20px auto 0px auto;
+    padding: 8px;
+    text-align: center;
+    color: white;}
+
+
+img.fotografia {display: inline-block;
+margin: 0 auto;
+text-align: center;
+max-width: 200px;}
+
+
+.bandiere {float: right;
+  max-width: 70px;
+  height: 40px;
+  margin-right: 20px;
+  margin-top: 50px;}
+
