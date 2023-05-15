@@ -159,3 +159,19 @@ padding: 0px;}
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
   }
+
+  .space {height: 110px;
+    max-width: fit-content; margin: 0 auto;}
+
+
+    .offerte {margin: 0 auto;
+      padding: 8px;
+      max-width: 700px;
+      color: white;
+      text-align: center;
+      font-size: larger;
+      margin-top: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Poppins, 'Trebuchet MS', sans-serif;}
+  
+  
+  #banner_rosso {background-color: rgb(248, 125, 54);}
