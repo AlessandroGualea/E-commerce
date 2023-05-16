@@ -7,7 +7,8 @@ body {background-color: #000000;
       align-items: center;
       justify-content: center;
       margin: 0 auto;
-      width: 100%;        background-image:url(Immagini/vecchio-sfondo-nero-struttura-del-grunge-carta-da-parati-scura-lavagna-lavagna-parete-della-stanza.jpg);
+      width: 100%;        
+      background-image:url(Immagini/vecchio-sfondo-nero-struttura-del-grunge-carta-da-parati-scura-lavagna-lavagna-parete-della-stanza.jpg);
     }
 
 .barraalto {background-color: hsl(0, 0%, 0%);
