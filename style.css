@@ -11,6 +11,9 @@ body {background-color: #000000;
       background-image:url(Immagini/vecchio-sfondo-nero-struttura-del-grunge-carta-da-parati-scura-lavagna-lavagna-parete-della-stanza.jpg);
     }
 
+
+
+
 .barraalto {background-color: hsl(0, 0%, 0%);
             float: center;
             width: 100%;
@@ -173,13 +176,18 @@ margin-right: auto;}
   .space {height: 110px;
     max-width: fit-content; margin: 0 auto;}
 
+
+
+  p {font-size: 16pt;}
+
   
 
   #ScarpaNuova {background-color: hsl(0, 0%, 6%);
     padding: 20px;
     color: white;
     height: auto;
-    text-align: center;}
+    text-align: center;
+    width: 90%;}
 
 
 
