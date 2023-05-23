@@ -188,8 +188,9 @@ margin-right: auto;}
     height: auto;
     text-align: center;
     width: 90%;
-    height: 500px;
-    display: inline-block;}
+    height: 100%;
+    display: inline-block;
+    }
 
 
 
@@ -216,7 +217,7 @@ p {color: white;}
 .box {display: inline-block;
 max-width: 50%;
 height: 300px;
-padding: 60px;}
+padding: 0px 60px 0px 60px;}
 
 img.NIKE {height: 80px;
 width: 250px;
