@@ -231,7 +231,8 @@ margin-right: 25%;
 margin-top: 5%;
 background-color: black;
 padding: 30px;
-max-height: 680px;}
+max-height: 680px;
+margin-bottom: 5%;}
 
 #Sfondochisiamo {background-image:url(https://store.sportit.com/wp-content/uploads/2018/04/ANMU0977.gif);}
 
@@ -247,4 +248,25 @@ max-height: 680px;}
   h1 {color: white;
   margin-left: 28%;
   }
+
+  #Blocconero {background-color: #000000;
+  width: 100%;
+height: 20000px;}
+
+  img.Fotoprofilo {width: 370px;
+  height: 600px;
+  margin-left: 30%;
+margin-bottom: 5%;
+}
+
+#Paragrafomio {max-width: 600px;
+display: inline-block;
+margin-top: 5%;
+margin-bottom: 5%;}
+
+#Paragrafomiotesto {float: right;
+max-width: 700px;
+margin-right: 10%;
+margin-top: 5%;
+margin-bottom: 10%;}
 
