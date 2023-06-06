@@ -228,10 +228,11 @@ margin-right: 25%;
 margin-top: 5%;
 background-color: black;
 padding: 30px;
-
 margin-bottom: 5%;}
 
-#Sfondochisiamo {background-image:url(https://store.sportit.com/wp-content/uploads/2018/04/ANMU0977.gif);}
+#Sfondochisiamo {background-image:url(https://store.sportit.com/wp-content/uploads/2018/04/ANMU0977.gif);
+background-repeat: no-repeat;
+background-attachment: fixed;}
 
 #Titolo {height: 150px;
   font-size: larger;
