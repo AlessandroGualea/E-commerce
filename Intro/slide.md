@@ -15,8 +15,6 @@ Impariamo insieme come utilizzare HTML, CSS e Javascript
 
 
 
-
-
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 <!-- style: "
