@@ -3,11 +3,7 @@ name: Genera PDF
 on:
   push:
     branches: [ main ]
-    paths:
-      - 'intro/*.*'
-      - 'intro/assets/*.*'
-      - '.github/workflows/*.*'
-
+    
 jobs:
   build:
 
