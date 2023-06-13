@@ -25,7 +25,7 @@ body {background-color: #000000;
                     float: right;}
 
 nav {background-color: #000000;
-     padding: 18px;
+     margin-left: 20px;
      width: 70px;
      display: flex;
      align-items: left;
@@ -33,10 +33,9 @@ nav {background-color: #000000;
      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
      transition: width 0.6s linear;
      overflow-x: hidden;
-     margin: 1%;
      float: left;
      position: fixed;
-     margin-top: 2.5%;}
+     margin-top: 50px;}
 
 nav.active {width: 390px;}
 
@@ -88,18 +87,11 @@ nav.active .icon .line1 {transform: rotate(-765deg) translateY(5.5px);}
 nav.active .icon .line2 {transform: rotate(765deg) translateY(-5.5px);}
 
 
-.logomio { max-width: fit-content;
-    margin: auto;
-    padding: 8px;
-    color: white;}
-
-
 img.fotografia {display: inline-block;
-
-
 max-width: 100px;
 width: 100%;
 max-height: 100px;
+margin-top: 20px;
 }
 
 
@@ -234,17 +226,8 @@ margin-bottom: 5%;}
 background-repeat: no-repeat;
 background-attachment: fixed;}
 
-#Titolo {height: 150px;
-  font-size: larger;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 5%;
-  background-color: black;
-  padding: 30px;}
 
   h1 {color: white;
-  margin-left: 28%;
   }
 
   #Blocconero {background-color: #000000;
@@ -254,19 +237,20 @@ height: 1000px;}
   img.Fotoprofilo {width: 370px;
   height: 600px;
   margin-left: 30%;
-margin-bottom: 5%;
+margin-bottom: 20px;
+margin-top: 20px;
 }
 
 #Paragrafomio {max-width: 600px;
 display: inline-block;
-margin-top: 5%;
-margin-bottom: 5%;}
+margin-top: 20px;
+margin-bottom: 20px;}
 
 #Paragrafomiotesto {float: right;
 max-width: 700px;
 margin-right: 10%;
-margin-top: 5%;
-margin-bottom: 10%;}
+margin-top: 20px;
+margin-bottom: 20px;}
 
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
