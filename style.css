@@ -345,3 +345,10 @@ fieldset {
   margin-bottom: 30px;
   margin-right: 40px;
   margin-left: 40px;}
+
+  .card-body{background-color: #000000;}
+
+  .btn btn-primary {color: #FFF;}
+
+  img.card-img-top {background-color: #000000;
+border: 0px;}
