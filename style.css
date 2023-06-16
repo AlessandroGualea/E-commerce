@@ -348,9 +348,17 @@ fieldset {
 
   .card-body{background-color: #000000;}
 
-  .btn btn-primary {color: #FFF;}
+ 
 
   img.card-img-top {background-color: #000000;
 border: 0px;}
 
 .card-title {color: #FFF;}
+.btn{
+  background-color: #ffffff;
+	border-color: #ffffff;
+}
+
+.btn-primary {color: #000000;}
+
+.card {border: none;}
