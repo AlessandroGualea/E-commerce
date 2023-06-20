@@ -338,7 +338,8 @@ fieldset {
  
 
   img.card-img-top {background-color: #000000;
-border: 0px;}
+border: 0px;
+transition: all 0.3s ease-out;}
 
 .card-title {color: #ffffff;}
 .btn{
