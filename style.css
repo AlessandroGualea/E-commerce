@@ -340,10 +340,10 @@ fieldset {
   img.card-img-top {background-color: #000000;
 border: 0px;}
 
-.card-title {color: #000000;}
+.card-title {color: #ffffff;}
 .btn{
-  background-color: #353535;
-	border-color: #2b2b2b;
+  background-color: #ffffff;
+	border-color: #ffffff;
 }
 
 .btn-primary {color: #000000;}
