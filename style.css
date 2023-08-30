@@ -351,7 +351,7 @@ border: 0px;
 
 .card {border: none;}
 
-img.iconacarrello {display: inline-block;
+img.iconacarrello {display: right;
   max-width: 50px;
   width: 10%;
   max-height: 70px;
