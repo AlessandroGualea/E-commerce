@@ -2,7 +2,7 @@
 
 * {box-sizing: border-box;}
 
-body {background-color: #ee0000;
+body {background-color: #000000;
       font-family: 'Gill Sans', 'Gill Sans MT', Poppins,'Trebuchet MS', sans-serif;
       align-items: center;
       justify-content: center;
@@ -351,13 +351,6 @@ border: 0px;
 
 .card {border: none;}
 
-<<<<<<< HEAD
-img.iconacarrello {display: right;
-  max-width: 50px;
-  width: 10%;
-  max-height: 70px;
-  margin-top: 35px;}
-=======
 img.iconacarrello {
   max-width: 50px;
   width: 10%;
@@ -366,4 +359,4 @@ img.iconacarrello {
   float: right;
   margin-right: 20px;
  }
->>>>>>> 1dc9a9b (modifica)
+
