@@ -351,4 +351,8 @@ border: 0px;
 
 .card {border: none;}
 
-.carrello {width: 100px;}
+img.iconacarrello {display: inline-block;
+  max-width: 50px;
+  width: 10%;
+  max-height: 70px;
+  margin-top: 35px;}
