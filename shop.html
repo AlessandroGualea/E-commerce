@@ -74,5 +74,36 @@
     </div>
   </div>
 </center>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
+<!-- Collegamento ai file JavaScript di Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.quantita').on('input', function() {
+      calcolaTotale();
+    });
+
+    $(document).on('click', '.rimuovi-prodotto', function() {
+      $(this).closest('tr').remove();
+      calcolaTotale();
+    });
+
+    function calcolaTotale() {
+      var totale = 0;
+
+      $('.quantita').each(function() {
+        var quantita = parseInt($(this).val());
+        var prezzo = parseInt($(this).closest('tr').find('td:nth-child(3)').text().replace('€', ''));
+        totale += quantita * prezzo;
+      });
+
+      $('#totale').text('€' + totale);
+    }
+  });
+</script>
     </body>
     </html>
