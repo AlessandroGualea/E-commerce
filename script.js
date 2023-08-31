@@ -37,27 +37,3 @@ var swiper = new Swiper(".mySwiper", {
     }
   }
 });
-
-
-$(document).ready(function() {
-  $('.quantita').on('input', function() {
-    calcolaTotale();
-  });
-
-  $(document).on('click', '.rimuovi-prodotto', function() {
-    $(this).closest('tr').remove();
-    calcolaTotale();
-  });
-
-  function calcolaTotale() {
-    var totale = 0;
-
-    $('.quantita').each(function() {
-      var quantita = parseInt($(this).val());
-      var prezzo = parseInt($(this).closest('tr').find('td:nth-child(3)').text().replace('€', ''));
-      totale += quantita * prezzo;
-    });
-
-    $('#totale').text('€' + totale);
-  }
-});
