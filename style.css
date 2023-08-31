@@ -367,13 +367,14 @@ img.iconacarrello {
 
  .titolocarrello{
   margin-top: 5%;
+  color: white;
 
 
 }
 
 .rimuovi-deep-pink {
-  background-color: deeppink;
-  border-color: deeppink;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
 }
 
 .rimuovi-deep-pink:hover {
@@ -383,21 +384,21 @@ img.iconacarrello {
 
 
 .form-label{
-  color: deeppink;
+  color: rgb(0, 0, 0);
   margin-top: 30%;
 
  
 }
 
 .form-group{
-  color:deeppink
+  color:rgb(255, 255, 255)
   
   
   }
 
 
   .form-control{
-    color:deeppink;
+    color:rgb(0, 0, 0);
     margin-top: 3%;
   }
 
