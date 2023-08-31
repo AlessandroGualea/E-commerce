@@ -39,10 +39,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-
-
-
-<script>
 $(document).ready(function() {
   $('.quantita').on('input', function() {
     calcolaTotale();
@@ -65,4 +61,3 @@ $(document).ready(function() {
     $('#totale').text('€' + totale);
   }
 });
-</script>
