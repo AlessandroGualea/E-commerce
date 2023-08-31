@@ -378,7 +378,7 @@ table {
 th {
   width: 33.3333%;
   padding-bottom: 3px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #000000;
 }
 
 td {
@@ -391,4 +391,8 @@ td input {
   width: 2em;
   text-align: center;
 }
-
+p {
+  margin-top: 1.5em;
+  padding-top: 0.4em;
+  border-top: 1px solid #ddd;
+}
