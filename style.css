@@ -368,9 +368,11 @@ th {color: #ffffff;}
 td {color: #ffffff;}
 
 .table {
-  max-width: 800px;
+  width: 80%;
+  border-collapse: collapse;
+  padding: 5%;
   margin-bottom: 5%;
-  margin-top: 5%;
+  margin-top: 5%
 }
 
 .acquista {
