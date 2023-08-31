@@ -370,8 +370,7 @@ td {color: #ffffff;}
 .table {
   width: 80%;
   border-collapse: collapse;
-  padding-left: 5%;
-  margin-right: 10%;
+  padding: 5%;
   margin-bottom: 6%;
 }
 
