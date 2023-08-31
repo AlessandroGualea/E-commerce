@@ -54,3 +54,47 @@ function svuotaCarrello() {
   var carrello = document.getElementById("carrello");
   carrello.innerHTML = 0;
 }
+
+
+
+
+
+
+'use strict';
+
+var app = angular.module('app', []);
+
+app.controller('CartCtrl', ['$scope', function($scope) {
+    $scope.items = [
+       {
+         name: 'A',
+         price: 5,
+         qty: 1
+       },
+      {
+        name: 'B',
+        price: 2,
+        qty: 1
+      },
+      {
+        name: 'C',
+        price: 3,
+        qty: 1
+      }
+    ];
+  
+    $scope.total = 0;
+  
+    $scope.getTotal = function() {
+        $scope.total = 0;
+        $scope.items.forEach(function(item) {
+            var qty = parseInt(item.qty, 10);
+            if(!item.qty || qty === 0) {
+              qty = 1;
+            }
+            $scope.total += (qty * item.price);
+        });
+    };
+  
+    $scope.getTotal();
+}]);

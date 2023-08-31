@@ -360,3 +360,35 @@ img.iconacarrello {
   margin-right: 20px;
  }
 
+
+
+
+
+
+ form {
+  max-width: 960px;
+  margin: 2em auto;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  width: 33.3333%;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  width: 33.3333%;
+  padding: 0.8em 0;
+}
+
+td input {
+  display: block;
+  width: 2em;
+  text-align: center;
+}
+
