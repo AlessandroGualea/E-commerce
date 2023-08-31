@@ -367,6 +367,20 @@ th {color: #ffffff;}
 
 td {color: #ffffff;}
 
+.acquista {
+  margin-bottom: 0%;
+  padding-left: 1px;
+  padding-right: 1%;
+  padding-top: 1%;
+  padding-bottom:1%;
+  margin-bottom: 0%;
+  
+  color: #ffffff;
+  border-color: deeppink;
+  background-color: deeppink;
+  margin-bottom: 10%;
+  }
+
  .titolocarrello{
   margin-top: 5%;
   color: white;
