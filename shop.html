@@ -32,26 +32,205 @@
     </center>
   </div>
   <div style="height: 130px;"></div>
-  <div ng-app="app">
-    <form ng-controller="CartCtrl">
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Qty</th>
-          </tr>  
-        </thead>
-        <tbody>
-          <tr ng-repeat="item in items">
-            <td>{{item.name}}</td>
-            <td>{{item.price | currency}}</td>
-            <td><input type="text" ng-change="getTotal()" ng-model="item.qty" /></td>
-          </tr>  
-        </tbody>  
-      </table>
-      <p>Total: {{total | currency}}</p>
-    </form>  
-  </div>  
+  <div class="main-content">
+    <div id="main-content"></div>
+    <div id="main-content-static" class="main" style="display:none">
+        <h3 id="shopping-card-title">Carrello</h3>
+        <p id="shopping-card-info">I prodotti che si trovano nel carrello non sono prenotati.</p>
+        <div class="shopping-card-items">
+            <table>
+                <tr class="shopping-card-header">
+                    <th id="header-product">Prodotto</th>
+                    <th></th>
+                    <th id="header-amount">Quantità</th>
+                    <th id="header-unitPrice">Prezzo unitario</th>
+                    <th id="header-total">Totale</th>
+                </tr>
+                <tr class="shopping-card-item">
+                    <td class="shopping-card-item-image">
+                        <img id="item1" src="" /></td>
+                    <td>
+                        <div class="description">
+                            <p class="boldText" id="product1-title">Veicolo per il recapito Posta</p>
+                            <p><span id="product1-productNr">Numero prodotto</span> 744654</p>
+                            <div class="availability">
+                                <div class="availability-circle"></div>
+                                <p id="product1-stock">In magazzino</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="counter">
+                            <button type="button" class="btn btn-outline-success counter-minus" onclick="updateCounter('counter1', 'cost1', 'total1', -1)">-</button>
+                            <input type="number" id="counter1" value="1" disabled="">
+                            <button type="button" class="btn btn-outline-success counter-plus" onclick="updateCounter('counter1', 'cost1', 'total1', 1)">+</button>
+                        </div>
+                    </td>
+                    <td class="boldText">CHF <span id="cost1">12.30</span></td>
+                    <td class="boldText">CHF <span id="total1" class="productCost">12.30</span></td>
+                </tr>
+                <tr class="shopping-card-item">
+                    <td class="shopping-card-item-image">
+                        <img id="item2" src="" /></td>
+                    <td>
+                        <div class="description">
+                            <p class="boldText" id="product2-title">Autopostale a due piani</p>
+                            <p><span id="product2-productNr">Numero prodotto</span> 565812</p>
+                            <div class="availability">
+                                <div class="availability-circle"></div>
+                                <p id="product2-stock">In magazzino</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="counter">
+                            <button type="button" class="btn btn-outline-success counter-minus" onclick="updateCounter('counter2', 'cost2', 'total2', -1)">-</button>
+                            <input type="number" id="counter2" value="1" disabled="">
+                            <button type="button" class="btn btn-outline-success counter-plus" onclick="updateCounter('counter2', 'cost2', 'total2', 1)">+</button>
+                        </div>
+                    </td>
+                    <td class="boldText">CHF <span id="cost2">45.90</span></td>
+                    <td class="boldText">CHF <span id="total2" class="productCost">45.90</span></td>
+                </tr>
+                <tr class="shopping-card-item">
+                    <td class="shopping-card-item-image">
+                        <img id="item3" src="" /></td>
+                    <td>
+                        <div class=" description">
+                            <p class="boldText" id="product3-title">PostLogistic Mercedes-Benz</p>
+                            <p><span id="product3-productNr">Numero prodotto</span> 537889</p>
+                            <div class="availability">
+                                <div class="availability-circle"></div>
+                                <p id="product3-stock">In magazzino</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="counter">
+                            <button type="button" class="btn btn-outline-success counter-minus" onclick="updateCounter( 'counter3', 'cost3', 'total3', -1)">-</button>
+                            <input type="number" id="counter3" value="1" disabled="">
+                            <button type="button" class="btn btn-outline-success counter-plus" onclick="updateCounter( 'counter3', 'cost3', 'total3', 1)">+</button>
+                        </div>
+                    </td>
+                    <td class="boldText">CHF <span id="cost3">198.00</span></td>
+                    <td class="boldText">CHF <span id="total3" class="productCost">198.00</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="shopping-card-summary">
+            <h5 id="summary-title">Sommario</h5>
+            <table>
+                <tr class="shopping-card-table-color">
+                    <td id="summary-subtotal">Subtotale</td>
+                    <td class="shopping-card-summary-value">CHF <span id="shopping-card-subtotal">256.20</span></td>
+                </tr>
+                <tr>
+                    <td id="summary-delivery">Consegna</td>
+                    <td id="summary-delivery-free" class="shopping-card-summary-value">Gratuito</td>
+                </tr>
+                <tr class="shopping-card-table-color">
+                    <td id="summary-total">Totali (prezzi IVA incl.)</td>
+                    <td class="shopping-card-summary-value">CHF <span id="shopping-card-total">256.20</span></td>
+                </tr>
+            </table>
+            <div class="shopping-card-summary-end">
+                <label class="labelContainer">
+                    <input type="radio" checked onchange="userTypeChanged(false)" name="authentication" value="loggedIn" id="radioLoggedIn" class="form-check-input radioBtn">
+                  <span id="radioLoggedInText"> Utente registrato</span>
+                  <span class="checkmark"></span></label>
+                <label class="labelContainer">
+                    <input type="radio" onchange="userTypeChanged(true)" name="authentication" value="anonym" id="radioAnonym" class="form-check-input radioBtn">
+                  <span id="radioAnonymText">Utente anonimo</span><span class="checkmark"></span></label>
+                <button type="button" class="btn btn-success" id="submitBtn" onclick="loadOverlayPaymentMask( 'Payment')">Ordinare ora</button>
+                <button type="button" class="btn btn-success" id="addCardBtn" onclick="loadOverlayPaymentMask( 'AddCard')" style="margin-right: 5px;">Aggiungi contanti</button>
+            </div>
+        </div>
+    </div>
+    <div id="main-content-instruction" class="main" style="display:none">
+        <h3 id="instructions-title" style="margin-bottom: 20px;">Anleitung</h3>
+        <p id="instructions-introduction" class="instructions-text">placeholder_text</p>
+        <div class="instructions-chapter shopping-card-items">
+            <h5 id="instructions-showcase-title">Payment ShowCase:</h5>
+            <p id="instructions-showcase-text" class="instructions-text">placeholder_text</p>
+            <h7 id="instructions-showcase-note-title">
+                <br>Anmerkung:</h7>
+            <p id="instructions-showcase-note">placeholder_text</p><a href="https://chrome.google.com/webstore/detail/test-creditcards-for-post/ikghmkdkihbhgpfmaaidhobbhfkdhdfp" target="_blank">https://chrome.google.com/webstore/detail/test-creditcards-for-post/ikghmkdkihbhgpfmaaidhobbhfkdhdfp</a></div>
+        <div class="instructions-chapter shopping-card-items">
+            <h5 id="instructions-library-title">Payment-Library im eigenen Shop einbinden:</h5>
+            <p id="instructions-library-text1" class="instructions-text">placeholder_text</p>
+          <pre>&lt;script language="javascript" type="text/javascript" src="OnlinePaymentLibrary.js"&gt;&lt;/script&gt;</pre>
+            <p id="instructions-library-text2" class="instructions-text">Was jetzt noch fehlt, ist der Aufruf der Payment-Maske. Dies wird mit nachfolgendem Code-Block gemacht:</p><pre id="code-block-2">function loadOverlayPaymentMask() {
+var settings = {};
+settings.logoUrl ="";
+settings.shopColor ="#FFCC00";
+var amount = 100;
+var lang ="de";
+var usecase ="UC2"
+
+var paymentUrl = https://billingonline-int.post.ch/OnlinePayment/Web/v1/#BoIntegration/ShowCase;
+paymentUrl +="?amount=" + amount +" &amp;lang=" + lang +" &amp;usecase=" + usecase;
+
+var overlayPayment = OnlinePayment("SHOP-SHOWCASE-#BoIntegration", paymentUrl, settings);
+overlayPayment.payInOverlay().then(function (response) {
+window.paymentResponse = response;
+console.log('Promise resolved');
+console.log('result: ' + response.result);
+console.log('data: ' + response.data);
+console.log('errorCode: ' + response.errorCode);
+console.log('errorMessage: ' + response.errorMessage);
+console.log('FullResult: ' + JSON.stringify(response));
+window.setTimeout(function () { }, 100);
+
+if (response.errorCode == 0) {
+  // Handle Success Result
+} else if (response.errorCode == 12) {
+  // Handle Cancel Result
+} else {
+  // Handle Error Result
+}
+}).catch(function (err) {
+console.log('Promise rejected: ' + JSON.stringify(err));
+});
+}</pre>
+            <p id="instructions-library-text3" class="instructions-text">In einem ersten Schritt werden die Einstellungen festgelegt, um die Zahlungsmaske anzupassen. Weitere Informationen zu diesen entsprechenden Parametern sind weiter unten beschrieben. Im nächsten Schritt wird die URL zusammengebaut, mit welcher die Zahlungsmaske im ShowCase-Modus aufgerufen wird. Die Url wird mit den Parametern amount, language und usecase befüllt. Zum Schluss bleibt noch der eigentliche Aufruf der Zahlungsmaske.
+                <br>Wir haben die Möglichkeit, die Antwort der Zahlung zu prüfen und auf das Resultat zu reagieren, indem der errorCode ausgewertet wird. (ErrorCode 0 bedeuetet erfolgreich, grösser 0 bedeutet Fehler, 12 entpricht einem Abbruch-Event durch den Benutzer). Um das Resultat genauer prüfen zu können, wird dieses in die Browser-Konsole geschrieben. Wenn Sie diese Informationen nicht brauchen, können die entsprechenden Codezeilen entfernt werden (console.log(...)).</p>
+            <p id="instructions-library-parameters" class="instructions-text">
+                <br>Folgende Parameter können individuell gesetzt werden:</p>
+            <ul>
+                <li class="parameter-list">settings.logoUrl:
+                    <p id="instructions-library-parameters-logoUrl" class="parameter-text instructions-text">Geben Sie hier die URL Ihres Firmenlogos an. Sie können den Parameter auch leer lassen. In diesem Fall wird das Logo der Post angezeigt. Beispiel:</p><pre class="parameter-text">settings.logoUrl ="https://geschaeftsbericht.post.ch/15/ar/img/post-logo.png";</pre></li>
+                <li class="parameter-list">settings.shopColor:
+                    <p id="instructions-library-parameters-shopColor" class="parameter-text instructions-text">Geben Sie hier die Farbe des Shops in hexadezimaler Schreibweise an.</p>
+                </li>
+                <li class="parameter-list">amount:
+                    <p id="instructions-library-parameters-amount" class="parameter-text instructions-text">Geben Sie hier den Gesamtbetrag der Bestellung an. Dieser Wert wird der URL der Zahlungsmaske mitgegeben.</p>
+                </li>
+                <li class="parameter-list">lang:
+                    <p id="instructions-library-parameters-lang" class="parameter-text instructions-text">Geben Sie hier die gewünschte Sprache der Zahlungsmaske an (de, fr, it, en). Dieser Wert wird der URL der Zahlungsmaske mitgegeben.</p>
+                </li>
+                <li class="parameter-list">usecase:
+                    <p id="instructions-library-parameters-usecase" class="parameter-text instructions-text">Geben Sie hier den gewünschten Usecase (UC) ein (Dieser defninert Art und Bezahlmöglichkeiten der Zahlungsmaske). Folgende Usecases stehen zur Auswahl:</p>
+                    <ul>
+                        <li class="parameter-sublist">UC1:
+                            <p id="instructions-library-parameters-usecase-uc1" class="parameter-text instructions-text">Zahlungsmaske für anonyme Benutzer, bei welcher keine Zahlungsmittel hinterlegt werden können (wählen Sie im ShowCase die Option 'Anonymer Benutzer').</p>
+                        </li>
+                        <li class="parameter-sublist">UC2:
+                            <p id="instructions-library-parameters-usecase-uc2" class="parameter-text instructions-text">Zahlungsmaske für eingeloggte Benutzer. Bei dieser Zahlungsmaske ist es unter anderem möglich, Zahlungsmittel zu hinterlegen (wählen Sie im ShowCase die Option 'Eingeloggter Benutzer').</p>
+                        </li>
+                        <li class="parameter-sublist">UC7R:
+                            <p id="instructions-library-parameters-usecase-uc7r" class="parameter-text instructions-text">Dies ist keine Zahlungsmaske, sondern eine Maske, bei der nur Zahlungsmittel hinterlegt werden können, ohne eine Zahlung auszuführen (drücken Sie im ShowCase den Button 'Zahlungsmittel hinterlegen').</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="parameter-list">returnUrl:
+                    <p id="instructions-library-parameters-returnUrl" class="parameter-text instructions-text">Die Return URL sagt aus, auf welche Seite nach der Zahlung weitergeleitet werden soll. Dieser Parameter muss nur gesetzt werden, wenn die Zahlungsmaske mittels Redirect (anstatt als Popup) eingebunden wurde. Sie können den Parameter wie folgt setzen:</p><pre class="parameter-text">var returnUrl ="https://www.post.ch"</pre></li>
+            </ul>
+        </div>
+        <div class="instructions-chapter shopping-card-items">
+            <h5 id="instructions-billingOnline-title">Produkt BillingOnline</h5>
+            <p id="instructions-billingOnline-text" class="instructions-text">Wenn Sie weitere Informationen zu BillingOnline erhalten möchten, dann wählen Sie den Menüpunkt 'BillingOnline'. Sie werden direkt zur entsprechenden Seite weitergeleitet.</p>
+        </div>
+    </div>
+</div>
     </body>
     </html>
