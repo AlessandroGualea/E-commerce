@@ -363,7 +363,8 @@ img.iconacarrello {
 
 a {hover: blue;}
 
-th {color: #ffffff;}
+th {color: #ffffff;
+    margin-right: 30px;}
 
 td {color: #ffffff;}
 
