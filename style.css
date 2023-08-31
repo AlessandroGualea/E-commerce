@@ -402,8 +402,8 @@ margin-bottom: 10%;
 }
 
 .rimuovi-deep-pink {
-  background-color: deeppink;
-  border-color: deeppink;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
 }
 
 .rimuovi-deep-pink:hover {
