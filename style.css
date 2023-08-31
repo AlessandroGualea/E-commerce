@@ -361,3 +361,137 @@ img.iconacarrello {
  }
 
 
+ table {
+  width: 100%;
+  border-collapse: collapse;
+  padding-left: 5%;
+  margin-right: 10%;
+  margin-bottom: 6%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ffffff;
+ 
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+
+
+
+.acquista {
+margin-bottom: 0%;
+padding-left: 1px;
+padding-right: 1%;
+padding-top: 1%;
+padding-bottom:1%;
+margin-bottom: 0%;
+
+color: #ffffff;
+border-color: deeppink;
+background-color: deeppink;
+margin-bottom: 10%;
+}
+
+.titolocarrello{
+  margin-top: 5%;
+
+
+}
+
+.rimuovi-deep-pink {
+  background-color: deeppink;
+  border-color: deeppink;
+}
+
+.rimuovi-deep-pink:hover {
+  background-color: #e60073;
+  border-color: #e60073;
+}
+
+
+.form-label{
+  color: deeppink;
+  margin-top: 30%;
+
+ 
+}
+
+.form-group{
+  color:deeppink
+  
+  
+  }
+
+
+  .form-control{
+    color:deeppink;
+    margin-top: 3%;
+  }
+
+
+  .container{
+    margin-top: 3%;
+    padding-top: 20px;
+  }
+
+
+  .input-group{
+    margin-top: -150px;
+  }
+  
+  
+  #bottonpink{
+
+padding-left: 2%;
+padding-right: 2%;
+padding-top: 1%;
+padding-bottom:1%;
+margin-bottom: 0%;
+color: #ffffff;
+border-color: deeppink;
+background-color: deeppink;
+margin-bottom: 10%;
+
+  }
+
+
+
+  #bottonred{
+
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin-bottom: 0%;
+    color: #ffffff;
+    border-color: deeppink;
+    background-color: deeppink;
+    margin-bottom: 10%;
+    
+      }
+
+      #bottoncarrello{
+     border-color: deeppink;
+        background-color: deeppink;
+        margin-bottom:  150px;
+        
+       
+
+      }
+
+  #bottonblack{
+
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin-bottom: 0%;
+    color: #ffffff;
+    border-color: deeppink;
+    background-color: deeppink;
+    margin-bottom: 10%;
+    
+      }
