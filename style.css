@@ -367,7 +367,13 @@ th {color: #ffffff;}
 
 td {color: #ffffff;}
 
-
+table {
+  width: 100%;
+  border-collapse: collapse;
+  padding-left: 5%;
+  margin-right: 10%;
+  margin-bottom: 6%;
+}
 
 .acquista {
   margin-bottom: 0%;
