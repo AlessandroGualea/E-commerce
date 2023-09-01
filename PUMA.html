@@ -33,7 +33,83 @@
   </div>
   <div style="height: 130px;"></div>
 
+  <div class="container">
+    <h2 class="frase">Scegli il tuo colore preferito!</h2>
 
+    <form>
+      <div class="form-group">
+        <label for="color">Colore:</label>
+        <select id="color" name="color" class="form-control">
+          <option value="nero">nero</option>
+          <option value="blu">blu</option>
+          <option value="verde">verde</option>
+          <option value="Rosso">rosso</option>
+          <!-- Aggiungi altre opzioni di colore qui -->
+        </select>
+      </div>
+    </form>
+
+    <img src="immagini/borsacatalogo-min-min.jpg" class="bag-image" alt="Borsa">
+
+    <script>
+      function changeBagImage() {
+        var colorSelect = document.getElementById('color');
+        var selectedColor = colorSelect.value;
+        var bagImage = document.querySelector('.bag-image');
+
+        if (selectedColor === 'nero') {
+          bagImage.src = 'immagini/borsacatalogo-min-min.jpg';
+        } else if (selectedColor === 'blu') {
+          bagImage.src = 'immagini/borsacatalogo/bershkablu-min.JPG';
+        } else if (selectedColor === 'verde') {
+          bagImage.src = 'immagini/borsacatalogo/bershkaverde-min.JPG';
+        } else if (selectedColor === 'Rosso') {
+          bagImage.src = 'immagini/borsacatalogo/bershkarossa-min.JPG';
+        }
+      }
+
+      var colorSelect = document.getElementById('color');
+      colorSelect.addEventListener('change', changeBagImage);
+    </script>
+  </div>
+
+  <div class="container my-5" id="descrizioneborsa">
+    <h1 class="mb-4">Borsa Flap</h1>
+    <p class="mb-4">Entra nella cerchia dell'<b>eleganza sofisticata</b> con la nostra borsa <i>elegante con catena
+        dorata</i>. Questo capolavoro di stile è progettato per donarti un look <b>impeccabile</b> e conferirti un
+      tocco di <i>lusso</i> in ogni occasione.
+
+      Realizzata con <b>materiali di alta qualità</b>, questa borsa è un connubio perfetto tra <i>design raffinato</i> e
+      <i>funzionalità pratica</i>. <p> Il suo corpo principale è realizzato in una <i>morbida pelle sintetica</i> che
+        garantisce una sensazione di lusso al tatto, mentre i dettagli in <b>metallo dorato</b> le conferiscono un'eleganza
+        senza tempo.
+
+      La <i>catena dorata</i>, sottile e lucente, aggiunge un tocco di <b>glamour</b> e ti consente di indossare la borsa
+      in diverse modalità: puoi tenerla elegantemente a mano come una <i>clutch</i> o appenderla sulla spalla per un look
+      più informale e raffinato.</p>
+
+    L'interno spazioso della borsa offre ampio spazio per organizzare i tuoi oggetti personali. Troverai <i>tasche
+      interne</i> per il tuo smartphone, portafoglio e trucchi, mantenendo tutto ben organizzato e facilmente accessibile.
+    La chiusura con zip garantisce la massima sicurezza per i tuoi effetti personali.
+
+    <h2 class="mb-3">Prezzo: €39,90</h2>
+
+    <form>
+      <div class="form-group">
+        <label for="color">Quantità:</label>
+        <input type="number" class="form-control" id="quantita" min="1" value="1">
+      </div>
+
+      <div>
+        <a href="carrello.html" class="btn btn-primary" id="bottonblack">Aggiungi al carrello</a>
+      </div>
+    </form>
+  </div>
+
+<!-- Collegamento ai file JavaScript di Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
 
   </body>
   </html>
