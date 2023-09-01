@@ -493,3 +493,15 @@ margin-bottom: 10%;
     margin-bottom: 10%;
     
       }
+
+
+
+      .hover1 img {
+        height: 300px;
+        width: 300px;
+        transition: all 1s ease;
+        }
+        .hover1 img:hover {
+        width: 400px;
+        height: 400px;
+        }
