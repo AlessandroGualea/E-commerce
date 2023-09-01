@@ -493,3 +493,13 @@ margin-bottom: 10%;
     margin-bottom: 10%;
     
       }
+
+
+
+      .image-wrap img:hover {
+        height: 1295px;
+        width: 2000px;
+        top: -518px;
+        left: -800px;
+        opacity: 1;
+      }
