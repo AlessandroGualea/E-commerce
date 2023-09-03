@@ -231,8 +231,8 @@ background-attachment: fixed;}
   }
 
 
-  img.Fotoprofilo {max-width: 70px;
-  max-height: 150px;
+  img.Fotoprofilo {max-width: 200px;
+  max-height: 280px;
   float: left;
   margin: 10px;
 }
