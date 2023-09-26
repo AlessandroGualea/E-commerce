@@ -66,3 +66,6 @@ $(document).ready(function() {
 
 
 
+function accettaCookie() {
+  document.getElementById("cookie-popup").style.display = "none";
+}
