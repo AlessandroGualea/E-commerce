@@ -513,7 +513,7 @@ margin-bottom: 10%;
 
 
 #cookie-popup {
-  font-size: 30px; color: #fff; width: 60%;
+  font-size: 30px; color: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -524,5 +524,5 @@ margin-bottom: 10%;
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  opacity: 95%;
+  opacity: 98%;
 }
